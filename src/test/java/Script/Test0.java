@@ -30,6 +30,9 @@ public class Test0
 			System.out.println("test failed");
 		}
 
+		// driver.quit()
+		driver.close();
+
 	}
 
 }
