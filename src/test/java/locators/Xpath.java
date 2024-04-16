@@ -19,7 +19,7 @@ public class Xpath
 //		// xpath with 'and' operator
 //		ob.findElement(By.xpath("//input[@autocomplete='off' and @id='small-searchterms']"));
 //
-//		// xpath with 'and' operator
+//		// xpath with 'or' operator
 //		ob.findElement(By.xpath("//input[@autocomplete='off' or @id='small-searchterms']"));
 
 		// xpath with contains()
