@@ -21,9 +21,16 @@ public class Xpath
 //
 //		// xpath with 'and' operator
 //		ob.findElement(By.xpath("//input[@autocomplete='off' or @id='small-searchterms']"));
-//		
+
+		// xpath with contains()
+		// ob.findElement(By.xpath("//input[contains(@placeholder,'Sea')]"));
+
+		// xpath with starts-with
+		// ob.findElement(By.xpath("//input[contains(@placeholder,'Sea')]"));
+
 //		//Xpath with inner text- text()
 //		ob.findElement(By.xpath("//a[text()='Desktops']"));
+
 //		
 		Boolean display = ob.findElement(By.xpath("//h3[text()='Featured']")).isDisplayed();
 		System.out.println(display);
