@@ -27,6 +27,7 @@ public class CssLocators
 		// tag class attribute | tag.class[attribute='value']
 		ob.findElement(By.cssSelector("input.search-box-text[type='text']")).sendKeys("apple");
 		ob.findElement(By.cssSelector(".search-box-text[type='text']")).sendKeys("apple");
+
 	}
 
 }
