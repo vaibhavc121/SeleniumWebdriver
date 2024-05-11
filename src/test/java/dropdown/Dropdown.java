@@ -33,6 +33,12 @@ public class Dropdown
 		{
 			// System.out.println(country.getText());
 			System.out.println(country);
+			System.out.println(country.getText()); // direct method because we are not using index here
+		}
+
+		for (int i = 0; i < options.size(); i++)
+		{
+			System.out.println(options.get(i).getText());
 		}
 
 	}
