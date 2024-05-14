@@ -7,12 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 public class Assignment
 {
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws InterruptedException
 	{
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -49,16 +48,33 @@ public class Assignment
 //
 //		driver.findElement(By.xpath("//span[normalize-space()='Full-Time Contract']")).click();
 
-		driver.get("https://testautomationpractice.blogspot.com/");
-		WebElement ele = driver.findElement(By.xpath("//select[@id='colors']"));
+//		driver.get("https://testautomationpractice.blogspot.com/");
+//		WebElement ele = driver.findElement(By.xpath("//select[@id='colors']"));
+//
+//		Select slct = new Select(ele);
+//		slct.selectByValue("green");
+//		List<WebElement> list = slct.getOptions();
+//		System.out.println(list.size());
+//		for (int i = 0; i < list.size(); i++)
+//		{
+//			System.out.println(list.get(i).getText());
+//		}
 
-		Select slct = new Select(ele);
-		slct.selectByValue("green");
-		List<WebElement> list = slct.getOptions();
-		System.out.println(list.size());
-		for (int i = 0; i < list.size(); i++)
+		driver.get("https://www.google.com/");
+		driver.findElement(By.name("q")).sendKeys("selenium");
+		Thread.sleep(5000);
+		List<WebElement> ele = driver.findElements(By.xpath("//ul[@role='listbox']//li//div[@role='option']"));
+		System.out.println(ele.size());
+
+		// ele.get(1).click();
+		for (int i = 0; i < ele.size(); i++)
 		{
-			System.out.println(list.get(i).getText());
+			ele.get(i).getText();
+			if (ele.get(i).getText().equals("selenium"))
+			{
+				ele.get(i).click();
+				break;
+			}
 		}
 
 	}
