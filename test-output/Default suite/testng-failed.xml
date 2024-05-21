@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.VeifyTitle">
+      <class name="testNG.SoftAssertDemo">
         <methods>
           <include name="title"/>
         </methods>
-      </class> <!-- testNG.VeifyTitle -->
+      </class> <!-- testNG.SoftAssertDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
