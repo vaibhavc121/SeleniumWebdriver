@@ -47,6 +47,7 @@ public class DatePickerDemo1
 			if (dt.getText().equals(date))
 			{
 				dt.click();
+				break;
 			}
 		}
 

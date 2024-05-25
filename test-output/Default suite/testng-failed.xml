@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.SoftAssertDemo">
+      <class name="testNG.GroupingTestautomationpractice">
         <methods>
-          <include name="title"/>
+          <include name="radioButton"/>
+          <include name="beforeMethod"/>
+          <include name="textbox"/>
         </methods>
-      </class> <!-- testNG.SoftAssertDemo -->
+      </class> <!-- testNG.GroupingTestautomationpractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

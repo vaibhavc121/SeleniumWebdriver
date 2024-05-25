@@ -1,54 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-21T23:10:57 IST" name="SeleniumWebdriver by groups" finished-at="2024-05-21T23:10:57 IST" duration-ms="81">
+  <suite started-at="2024-05-25T19:05:24 IST" name="Default suite" finished-at="2024-05-25T19:05:28 IST" duration-ms="3768">
     <groups>
-      <group name="BVT">
-        <method signature="Grouping.test5()[pri:0, instance:testNG.Grouping@333291e3]" name="test5" class="testNG.Grouping"/>
-      </group> <!-- BVT -->
-      <group name="functional">
-        <method signature="Grouping.test3()[pri:0, instance:testNG.Grouping@333291e3]" name="test3" class="testNG.Grouping"/>
-      </group> <!-- functional -->
-      <group name="integration">
-        <method signature="Grouping.test4()[pri:0, instance:testNG.Grouping@333291e3]" name="test4" class="testNG.Grouping"/>
-        <method signature="Grouping.test5()[pri:0, instance:testNG.Grouping@333291e3]" name="test5" class="testNG.Grouping"/>
-      </group> <!-- integration -->
-      <group name="smoke">
-        <method signature="Grouping.test1()[pri:0, instance:testNG.Grouping@333291e3]" name="test1" class="testNG.Grouping"/>
-        <method signature="Grouping.test2()[pri:0, instance:testNG.Grouping@333291e3]" name="test2" class="testNG.Grouping"/>
-      </group> <!-- smoke -->
-      <group name="class">
-        <method signature="Grouping.test1()[pri:0, instance:testNG.Grouping@333291e3]" name="test1" class="testNG.Grouping"/>
-        <method signature="Grouping.test2()[pri:0, instance:testNG.Grouping@333291e3]" name="test2" class="testNG.Grouping"/>
-        <method signature="Grouping.test3()[pri:0, instance:testNG.Grouping@333291e3]" name="test3" class="testNG.Grouping"/>
-        <method signature="Grouping.test4()[pri:0, instance:testNG.Grouping@333291e3]" name="test4" class="testNG.Grouping"/>
-        <method signature="Grouping.test5()[pri:0, instance:testNG.Grouping@333291e3]" name="test5" class="testNG.Grouping"/>
-      </group> <!-- class -->
     </groups>
-    <test started-at="2024-05-21T23:10:57 IST" name="GRP-class" finished-at="2024-05-21T23:10:57 IST" duration-ms="81">
-      <class name="testNG.Grouping">
-        <test-method signature="test1()[pri:0, instance:testNG.Grouping@333291e3]" started-at="2024-05-21T23:10:57 IST" name="test1" finished-at="2024-05-21T23:10:57 IST" duration-ms="12" status="PASS">
+    <test started-at="2024-05-25T19:05:24 IST" name="Default test" finished-at="2024-05-25T19:05:28 IST" duration-ms="3768">
+      <class name="testNG.VeifyTitle">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.VeifyTitle@dbf57b3]" started-at="2024-05-25T19:05:24 IST" name="beforeMethod" finished-at="2024-05-25T19:05:28 IST" duration-ms="3709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:0, instance:testNG.Grouping@333291e3]" started-at="2024-05-21T23:10:57 IST" name="test2" finished-at="2024-05-21T23:10:57 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="title()[pri:0, instance:testNG.VeifyTitle@dbf57b3]" started-at="2024-05-25T19:05:28 IST" name="title" finished-at="2024-05-25T19:05:28 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:0, instance:testNG.Grouping@333291e3]" started-at="2024-05-21T23:10:57 IST" name="test3" finished-at="2024-05-21T23:10:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test4()[pri:0, instance:testNG.Grouping@333291e3]" started-at="2024-05-21T23:10:57 IST" name="test4" finished-at="2024-05-21T23:10:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method signature="test5()[pri:0, instance:testNG.Grouping@333291e3]" started-at="2024-05-21T23:10:57 IST" name="test5" finished-at="2024-05-21T23:10:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- testNG.Grouping -->
-    </test> <!-- GRP-class -->
-  </suite> <!-- SeleniumWebdriver by groups -->
+        </test-method> <!-- title -->
+      </class> <!-- testNG.VeifyTitle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
