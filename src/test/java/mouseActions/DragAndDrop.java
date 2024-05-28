@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class DoubleClickAction
+public class DragAndDrop
 {
 
 	public static void main(String[] args)
@@ -17,11 +17,12 @@ public class DoubleClickAction
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_ondblclick");
-		driver.switchTo().frame("iframeResult");
-		WebElement button = driver.findElement(By.xpath("//button[normalize-space()='Double-click me']"));
+		driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
+
 		Actions act = new Actions(driver);
-		act.doubleClick(button).perform();
+		WebElement madrid = driver.findElement(By.xpath("//div[@id='box7']"));
+		WebElement rome = driver.findElement(By.xpath("//div[@id='box106']"));
+		act.dragAndDrop(madrid, rome).perform();
 	}
 
 }
