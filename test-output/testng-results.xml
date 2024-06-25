@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-22T23:04:08 IST" name="Default suite" finished-at="2024-06-22T23:04:17 IST" duration-ms="8890">
+  <suite started-at="2024-06-25T23:41:34 IST" name="Default suite" finished-at="2024-06-25T23:41:34 IST" duration-ms="81">
     <groups>
     </groups>
-    <test started-at="2024-06-22T23:04:08 IST" name="Default test" finished-at="2024-06-22T23:04:17 IST" duration-ms="8890">
-      <class name="pom.TestScript">
-        <test-method signature="verify()[pri:0, instance:pom.TestScript@15ff3e9e]" started-at="2024-06-22T23:04:08 IST" name="verify" finished-at="2024-06-22T23:04:17 IST" duration-ms="8856" status="PASS">
+    <test started-at="2024-06-25T23:41:34 IST" name="Default test" finished-at="2024-06-25T23:41:34 IST" duration-ms="81">
+      <class name="testNG.Test0">
+        <test-method signature="login()[pri:0, instance:testNG.Test0@8dbdac1]" started-at="2024-06-25T23:41:34 IST" name="login" finished-at="2024-06-25T23:41:34 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify -->
-      </class> <!-- pom.TestScript -->
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:testNG.Test0@8dbdac1]" started-at="2024-06-25T23:41:34 IST" name="logout" finished-at="2024-06-25T23:41:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="openapp()[pri:0, instance:testNG.Test0@8dbdac1]" started-at="2024-06-25T23:41:34 IST" name="openapp" finished-at="2024-06-25T23:41:34 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+      </class> <!-- testNG.Test0 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
