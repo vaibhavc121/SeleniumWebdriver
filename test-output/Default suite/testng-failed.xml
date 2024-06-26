@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pom.TestScript">
+      <class name="testNG.OrangeHRMTest">
         <methods>
-          <include name="verify"/>
+          <include name="testLogoin"/>
         </methods>
-      </class> <!-- pom.TestScript -->
+      </class> <!-- testNG.OrangeHRMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
