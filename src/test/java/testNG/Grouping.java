@@ -5,7 +5,8 @@ import org.testng.annotations.Test;
 @Test(groups = "class")
 public class Grouping
 {
-	@Test(groups = "smoke")
+	@Test(groups =
+	{ "smoke", "sanity", "combine" })
 	void test1()
 	{
 		System.out.println("test 1");
