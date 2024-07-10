@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 public class TestScript
 {
+	// with main method
 	@Test
 	public static void verify()
 	{

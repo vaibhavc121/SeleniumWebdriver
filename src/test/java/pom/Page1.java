@@ -10,6 +10,7 @@ public class Page1
 {
 	WebDriver driver;
 
+	// identify the elements which are present in the page
 	@FindBy(id = "name")
 	WebElement name;
 	@FindBy(id = "email")

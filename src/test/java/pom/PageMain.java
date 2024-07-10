@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 public class PageMain
 {
+	// without main method
 	@Test
 	public void verify()
 	{
