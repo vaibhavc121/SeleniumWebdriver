@@ -8,8 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(testNG.ListenerMethods.class) // add this annotation if u don't want to execute from xml file
 public class ListenerTest
 {
 	WebDriver driver;
@@ -29,7 +31,7 @@ public class ListenerTest
 	{
 		Thread.sleep(3000);
 		Boolean status = driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
-		System.out.println(status);
+		// System.out.println(status);
 		Assert.assertTrue(true);
 	}
 
