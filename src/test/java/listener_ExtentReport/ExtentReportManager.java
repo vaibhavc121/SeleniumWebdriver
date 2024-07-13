@@ -1,6 +1,8 @@
 package listener_ExtentReport;
 
-public class ExtentReportManager
+import org.testng.ITestListener;
+
+public class ExtentReportManager implements ITestListener
 {
 
 }
