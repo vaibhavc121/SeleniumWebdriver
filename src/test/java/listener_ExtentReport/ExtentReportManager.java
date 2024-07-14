@@ -65,4 +65,6 @@ public class ExtentReportManager implements ITestListener
 		extent.flush();
 	}
 
+	// missing- in report display test method name with class name
+
 }
