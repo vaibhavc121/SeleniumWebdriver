@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-13T20:23:08 IST" name="Default suite" finished-at="2024-07-13T20:23:17 IST" duration-ms="9710">
+  <suite started-at="2024-07-14T15:24:44 IST" name="Suite" finished-at="2024-07-14T15:24:54 IST" duration-ms="9813">
     <groups>
     </groups>
-    <test started-at="2024-07-13T20:23:08 IST" name="Default test" finished-at="2024-07-13T20:23:17 IST" duration-ms="9710">
-      <class name="testNG.ListenerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testNG.ListenerTest@131774fe]" started-at="2024-07-13T20:23:08 IST" name="setup" finished-at="2024-07-13T20:23:14 IST" duration-ms="6541" status="PASS">
+    <test started-at="2024-07-14T15:24:44 IST" name="Test" finished-at="2024-07-14T15:24:54 IST" duration-ms="9813">
+      <class name="listener_ExtentReport.ListenerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:listener_ExtentReport.ListenerTest@3febb011]" started-at="2024-07-14T15:24:44 IST" name="setup" finished-at="2024-07-14T15:24:51 IST" duration-ms="6429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:testNG.ListenerTest@131774fe]" started-at="2024-07-13T20:23:14 IST" name="testLogo" finished-at="2024-07-13T20:23:17 IST" duration-ms="3094" status="PASS">
+        <test-method signature="testLogo()[pri:1, instance:listener_ExtentReport.ListenerTest@3febb011]" started-at="2024-07-14T15:24:51 IST" name="testLogo" finished-at="2024-07-14T15:24:54 IST" duration-ms="3083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogo -->
-        <test-method signature="testAppURL()[pri:2, instance:testNG.ListenerTest@131774fe]" started-at="2024-07-13T20:23:17 IST" name="testAppURL" finished-at="2024-07-13T20:23:17 IST" duration-ms="21" status="FAIL">
+        <test-method signature="testAppURL()[pri:2, instance:listener_ExtentReport.ListenerTest@3febb011]" started-at="2024-07-14T15:24:54 IST" name="testAppURL" finished-at="2024-07-14T15:24:54 IST" duration-ms="13" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [dummy] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
@@ -28,7 +28,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at testNG.ListenerTest.testAppURL(ListenerTest.java:41)
+at listener_ExtentReport.ListenerTest.testAppURL(ListenerTest.java:41)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -61,13 +61,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAppURL -->
-        <test-method signature="testHomePageTitle()[pri:3, instance:testNG.ListenerTest@131774fe]" started-at="2024-07-13T20:23:17 IST" name="testHomePageTitle" finished-at="2024-07-13T20:23:17 IST" depends-on-methods="testNG.ListenerTest.testAppURL" duration-ms="1" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:listener_ExtentReport.ListenerTest@3febb011]" started-at="2024-07-14T15:24:54 IST" name="tearDown" finished-at="2024-07-14T15:24:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testHomePageTitle()[pri:3, instance:listener_ExtentReport.ListenerTest@3febb011]" started-at="2024-07-14T15:24:54 IST" name="testHomePageTitle" finished-at="2024-07-14T15:24:54 IST" depends-on-methods="listener_ExtentReport.ListenerTest.testAppURL" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method ListenerTest.testHomePageTitle()[pri:3, instance:testNG.ListenerTest@131774fe] depends on not successfully finished methods]]>
+              <![CDATA[Method ListenerTest.testHomePageTitle()[pri:3, instance:listener_ExtentReport.ListenerTest@3febb011] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method ListenerTest.testHomePageTitle()[pri:3, instance:testNG.ListenerTest@131774fe] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method ListenerTest.testHomePageTitle()[pri:3, instance:listener_ExtentReport.ListenerTest@3febb011] depends on not successfully finished methods
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -93,11 +97,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNG.ListenerTest@131774fe]" started-at="2024-07-13T20:23:17 IST" name="tearDown" finished-at="2024-07-13T20:23:17 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testNG.ListenerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- listener_ExtentReport.ListenerTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
