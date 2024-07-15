@@ -1,17 +1,31 @@
 package pom;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-//using page factory
+//using page factory class
 public class Page1
 {
 	WebDriver driver;
 
-	// identify the elements which are present in the page
-	@FindBy(id = "name")
+	public Page1(WebDriver d) // constructor which initiate the driver automatically
+	{
+		// this.driver=driver;
+		driver = d;
+		PageFactory.initElements(d, this); // mandatory statement
+											// this method will make sure this driver is applicable for all kinds of
+											// elements bcos in below without using drive we are finding the elements.
+											// in short initiate all the elements using driver
+
+	}
+
+	// identify the elements which are present in the page (locators)
+	@FindBy(id = "name") // this statement find the element and store in the variable.
+							// FindBy-findElement()
 	WebElement name;
 	@FindBy(id = "email")
 	WebElement email;
@@ -20,13 +34,11 @@ public class Page1
 	@FindBy(id = "textarea")
 	WebElement textarea;
 
-	public Page1(WebDriver d)
-	{
-		// this.driver=driver;
-		driver = d;
-		PageFactory.initElements(d, this); // this method will create web element
-	}
+	// when u find group of web elements
+	@FindBy(tagName = "a")
+	List<WebElement> links;
 
+	// action methods
 	public void setName(String sname)
 	{
 		name.sendKeys(sname);
