@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.ListenerTest">
+      <class name="pom.PageMain">
         <methods>
-          <include name="testHomePageTitle"/>
-          <include name="testAppURL"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="verify"/>
         </methods>
-      </class> <!-- testNG.ListenerTest -->
+      </class> <!-- pom.PageMain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
