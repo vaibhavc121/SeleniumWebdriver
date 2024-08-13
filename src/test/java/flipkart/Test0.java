@@ -18,7 +18,6 @@ public class Test0
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
 		driver.get("https://www.flipkart.com/");
 //		driver.findElement(By.xpath("//span[normalize-space()='Login']")).click();
 //		driver.findElement(By.xpath("//div[normalize-space()='My Profile']")).click();
