@@ -51,6 +51,11 @@
 
 
 
+		<dependency>
+			<groupId>Enfinity_HybridFramework</groupId>
+			<artifactId>Enfinity_HybridFramework</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 </dependencies>
   
 </project>
